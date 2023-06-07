@@ -91,7 +91,7 @@ img {
 
 
 /* ======== TEXT ========= */
-
+/* 
 .main-header {
     font-size: 20px;
     line-height: 1.2;
@@ -99,7 +99,7 @@ img {
     color: var(--text);
     font-weight: 500;
     margin-bottom: 8px;
-}
+} */
 
 .main-header-section {
     font-size: 20px;
@@ -120,13 +120,13 @@ img {
     margin-bottom: 8px;
 }
 
-.text {
+/* .text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
 
-}
+} */
 
 .page-header {
     font-size: 36px;
@@ -580,7 +580,100 @@ img {
 
 
 /*========= SECTION TWO =========*/
+
+.items-div {
+    display: none;
+}
+
+.main-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
 .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.section-li {
+    margin-bottom: 72px;
+}
+
+
+
+
+/* ==========TABLET============ */
+
+@media screen and (min-width: 767px) {
+    .flex-ul {
+        display: flex;
+        column-gap: 24px;
+        flex-wrap: wrap;
+        row-gap: 72px;
+    }
+
+    .section-li {
+        width: calc((100%-24px) / 2);
+        max-width: 356px;
+    }
+
+    .main-header {
+        text-align: left;
+    }
+
+    .section-li {
+        margin-bottom: 0;
+    }
+}
+
+
+/* ===========DESKTOP============== */
+
+@media screen and (min-width:1158px) {
+    .items-list {
+        width: 64px;
+        height: 64px;
+    }
+
+    .items-div {
+        display: flex;
+        border-radius: 4px;
+        background-color: var(--section);
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        margin-bottom: 8px;
+    }
+
+    .section-li {
+        width: calc((100% - 72px) / 4);
+        gap: 24px;
+    }
+
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+
+
+
+
+/* .section {
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -604,7 +697,7 @@ img {
     justify-content: center;
     height: 112px;
     margin-bottom: 8px;
-}
+} */
 
 
 
