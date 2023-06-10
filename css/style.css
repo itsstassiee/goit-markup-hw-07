@@ -152,6 +152,7 @@ img {
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
+        overflow: scroll;
     }
 
     .container-menu-mobile {
@@ -194,8 +195,6 @@ img {
     }
 
     .contacts-flex-menu {
-        display: flex;
-        flex-direction: column-reverse;
         margin-bottom: 48px;
     }
 
@@ -213,6 +212,12 @@ img {
         text-transform: capitalize;
         color: #2E2F42;
         transition: color var(--transition);
+    }
+
+    .svg-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -299,12 +304,6 @@ img {
 
 }
 
-
-.svg-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 
 
@@ -1349,8 +1348,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 408px;
-    min-height: 584px;
+    width: 392px;
+    min-height: 576px;
     transform: translate(-50%, -50%);
     background: var(--modal);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
