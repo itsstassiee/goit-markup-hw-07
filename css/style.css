@@ -1340,6 +1340,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 @media screen and (max-width: 767px) {
     .modal {
         overflow: scroll;
+        max-width: 392px;
     }
 
 }
