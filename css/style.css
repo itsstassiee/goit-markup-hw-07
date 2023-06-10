@@ -1025,7 +1025,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 
 
 .modal-button-form {
-    /* display: block; */
+    display: block;
     min-width: 169px;
     height: 56px;
     font-family: "Roboto", sans-serif;
@@ -1038,8 +1038,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     cursor: pointer;
     background-color: #4D5AE5;
     border: none;
-    /* margin-left: auto;
-    margin-right: auto; */
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 4px;
     transition: background-color var(--transition);
 }
@@ -1087,7 +1087,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     letter-spacing: 0.04em;
     cursor: pointer;
     border-radius: 4px;
-    min-width: 165px;
+    max-width: 165px;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -1520,10 +1520,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 
 
 
-.footer-form {
+/* .footer-form {
     margin-left: 80px;
     fill: var(--white);
-}
+} */
 
 
 
@@ -1635,6 +1635,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* 
 .modal-button-form {
     display: block;
     min-width: 169px;
@@ -1653,18 +1654,19 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     margin-right: auto;
     border-radius: 4px;
     transition: background-color var(--transition);
-}
+} */
 
-.modal-button-form:focus,
+/* .modal-button-form:focus,
 .modal-button-form:hover {
     background-color: var(--btn);
-}
+} */
 
-.form-wrapper-footer {
+/* .form-wrapper-footer {
     display: flex;
     gap: 24px;
-}
+} */
 
+/* 
 .form-footer-email {
     width: 264px;
     height: 40px;
@@ -1681,35 +1683,9 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 
 .form-footer-email::placeholder {
     color: #ffffff;
-}
+} */
 
-.button-form-footer {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 24px;
-    padding-right: 24px;
-    background-color: var(--text-btn);
-    border: none;
-    color: var(--white);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.04em;
-    cursor: pointer;
-    border-radius: 4px;
-    min-width: 165px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    transition: background-color var(--transition);
-}
 
-.button-form-footer:hover,
-.button-form-footer:focus {
-    background-color: var(--btn);
-}
 
 .form-link {
     color: var(--text-btn);
@@ -2067,54 +2043,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     transition: background-color var(--transition);
 }
 
-.modal-button-form:focus,
-.modal-button-form:hover {
-    background-color: var(--btn);
-} 
-.form-wrapper-footer {
-    display: flex;
-    gap: 24px;
-} 
 
-.form-footer-email {
-    width: 264px;
-    height: 40px;
-    padding-left: 16px;
-    background-color: transparent;
-    border: 1px solid #FFFFFF;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-
-} 
-.form-footer-email::placeholder {
-    color: #ffffff;
-}
-
-.button-form-footer {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 24px;
-    padding-right: 24px;
-    background-color: var(--text-btn);
-    border: none;
-    color: var(--white);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.04em;
-    cursor: pointer;
-    border-radius: 4px;
-    min-width: 165px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    transition: background-color var(--transition);
-}
 
 .button-form-footer:hover,
 .button-form-footer:focus {
