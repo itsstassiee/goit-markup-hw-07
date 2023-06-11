@@ -153,10 +153,13 @@ img {
         display: flex;
         gap: 56px;
     }
+
+
 }
 
 
 @media screen and (max-width: 767px) {
+
     .mobile-menu {
         position: fixed;
         top: 0;
@@ -168,16 +171,20 @@ img {
         visibility: hidden;
         pointer-events: none;
         overflow: scroll;
+    }
 
+    .contacts-flex-menu {
+        margin-bottom: 48px;
     }
 
     .container-menu-mobile {
         position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         height: 100%;
         padding: 80px 40px;
+        justify-content: space-between;
+
     }
 
     .menu-button {
@@ -214,9 +221,9 @@ img {
     /* .contacts-flex-menu {
         margin-bottom: 48px;
     } */
-    .contact-mail-li {
+    /* .contact-mail-li {
         margin-bottom: 48px;
-    }
+    } */
 
     .mobile-menu.is-open {
         opacity: 1;
@@ -426,6 +433,9 @@ img {
         gap: 24px;
     }
 
+    .current {
+        color: var(--btn);
+    }
 
 }
 
@@ -448,6 +458,7 @@ img {
 
 
 
+
     .contact {
         font-weight: 400;
         font-size: 16px;
@@ -460,7 +471,7 @@ img {
 
 
     .logo {
-        margin-right: 76px;
+        /* margin-right: 76px; */
         padding: 24px 0;
     }
 
@@ -902,7 +913,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 }
 
 .link-customers {
-    width: 190px;
+
     height: 88px;
     border: 1px solid var(--light_slate);
     border-radius: 4px;
@@ -924,6 +935,9 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     row-gap: 72px;
 }
 
+.customers-li {
+    width: calc((100% - 16px) / 2);
+}
 
 
 
@@ -932,6 +946,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 
 
 @media screen and (min-width: 768px) {
+    .customer-container {
+        max-width: 584px;
+    }
+
     .customers-ul {
 
         column-gap: 24px;
@@ -941,12 +959,21 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     .customers {
         padding: 96px 0;
     }
+
+    .customers-li {
+        width: calc((100% - 48px) / 3);
+
+    }
 }
 
 
 /* ==========DESKTOP======== */
 
 @media screen and (min-width: 1158px) {
+    .customer-container {
+        max-width: 1158px;
+    }
+
     .customers {
         padding: 120px 0;
     }
@@ -973,7 +1000,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 /* ========= FOOTER ========= */
 @media screen and (max-width: 1157px) {
     .footer-page-container {
-        flex-direction: row;
+        /* flex-direction: row; */
         flex-wrap: wrap;
     }
 }
@@ -1043,6 +1070,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 .footer-social-list {
     display: flex;
     gap: 16px;
+    justify-content: center;
 }
 
 .footer-svg {
@@ -1155,10 +1183,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 }
 
 .footer-right {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     margin-bottom: 72px;
 }
 
@@ -1171,11 +1199,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 
 
 @media screen and (min-width: 768px) {
-    .footer-page-container {
-        width: 584px;
-        display: flex;
 
-    }
 
     .footer-page-container {
         width: 584px;
@@ -1184,8 +1208,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
         display: flex;
         /* flex-direction: row;
         flex-wrap: wrap; */
-        align-items: baseline;
-        justify-content: flex-start;
+        /* align-items: baseline;
+        justify-content: flex-start; */
     }
 
     .footer-form {
@@ -1202,20 +1226,17 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 
     .form-label {
         margin-right: 24px;
-        margin-bottom: 0;
         width: 100%;
     }
 
-    .footer-right {
+    /* .footer-right {
         margin-bottom: 72px;
-    }
+    } */
 
     .footer-left {
         align-items: flex-start;
         margin-right: 24px;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 72px;
+        /* margin-bottom: 72px; */
     }
 
 
@@ -1277,7 +1298,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
         letter-spacing: 0.04em;
         color: var(--light_slate);
         display: block;
-        margin-bottom: 4px;
         display: block;
     }
 
@@ -1619,7 +1639,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     letter-spacing: 0.04em;
     color: var(--light_slate);
     display: block;
-    margin-bottom: 4px;
 }
 
 .wrapper-input {
